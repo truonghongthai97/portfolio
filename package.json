@@ -8,10 +8,15 @@
     "test:unit": "vitest --environment jsdom",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "server": "node ./server/server.js"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.6",
+    "element-plus": "^2.2.6",
+    "json-server": "^0.17.0",
     "pinia": "^2.0.14",
+    "sass": "^1.53.0",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
   },

@@ -1,9 +1,15 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import { ref, reactive, onMounted, onUnmounted, toRefs } from "vue";
+import useMousePosition from "@/hooks/useMousePosition";
+
+const { x, y } = useMousePosition();
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <div>
+      <div>x: {{ x }}</div>
+      <div>y: {{ y }}</div>
+    </div>
   </main>
 </template>
